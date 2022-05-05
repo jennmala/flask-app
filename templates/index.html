@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collector App</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Collecting height</h1>
+        <h3>Please fill the entries</h3>
+        <form action="{{url_for('success')}}" method="POST">
+            <input title="your email" type="email" placeholder="enter your email" name="email_name" required>
+            <input title="your height" type="number" min="50" max="300" step="0.1" placeholder="enter your height" name="height_name" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
